@@ -1,0 +1,18 @@
+# Keil MDK
+*.o
+*.d
+*.crf
+*.axf
+*.hex
+*.htm
+*.sct
+*.map
+*.dep
+*.uvoptx
+*.uvguix.*
+*.build_log.htm
+*.log
+DebugConfig/
+
+# Other temporary files
+.DS_Store
