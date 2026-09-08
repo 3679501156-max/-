@@ -24,7 +24,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "fun.h"
+#include "App_Controller.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -98,7 +98,7 @@ int main(void)
 HAL_TIM_PWM_Start(&htim3,TIM_CHANNEL_2);
 HAL_TIM_IC_Start_IT(&htim8,TIM_CHANNEL_1);
 HAL_TIM_Base_Start_IT(&htim4);
-HAL_TIM_Base_Start(&htim2); // ³¤°´
+HAL_TIM_Base_Start(&htim2); // ï¿½ï¿½ï¿½ï¿½
 HAL_GPIO_WritePin(GPIOD,GPIO_PIN_2,0);
 LCD_Init();
 LCD_Clear(Black);
@@ -111,8 +111,8 @@ LCD_SetTextColor(White);
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	   oled_show();
-		key_scan();
+	   App_Display_Update();
+		App_Key_Scan();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
